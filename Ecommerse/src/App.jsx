@@ -1,7 +1,11 @@
-import "./App.css";
-
+import HomePage from "./components/HomePage/HomePage";
 function App() {
-    return <div>Ecommerse</div>;
+    console.log("✅ App component rendered");
+    return (
+        <>
+            <HomePage />;
+        </>
+    )
 }
 
 export default App;
