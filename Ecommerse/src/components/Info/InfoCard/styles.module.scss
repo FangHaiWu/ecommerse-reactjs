@@ -1,0 +1,25 @@
+@use "@styles/mixin.module.scss" as *;
+@use "@styles/variables.module.scss" as *;
+
+.containerInfoCard {
+    @include flex_box_custom(280px, 105px, 3px);
+    padding: 15px;
+}
+
+.containerContent {
+    @include flex_box_custom(280px, 105px, 3px);
+    flex-direction: column;
+}
+.containerTitle {
+    font-size: 0.8rem;
+}
+.containerDescription {
+    font-size: 0.75rem;
+}
+.imgInfoCard {
+    width: 40px;
+    height: 40px;
+}
+.imgIcon {
+    filter: invert(0.3);
+}

@@ -1,6 +1,7 @@
 import Header from "@components/Header/Header";
 import Banner from "@components/Banner/Banner";
 import styles from "./styles.module.scss";
+import Info from "../Info/Info";
 const HomePage = () => {
     const { container } = styles;
     return (
@@ -8,6 +9,7 @@ const HomePage = () => {
             <div className={container}>
                 <Header />
                 <Banner />
+                <Info />
             </div>
         </div>
     );

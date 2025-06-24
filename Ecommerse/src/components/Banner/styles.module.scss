@@ -10,7 +10,7 @@
     background-size: cover;
 }
 .content {
-    @include flex_box_custom(center, center, 0px);
+    @include flex_box_custom(center, center, 10px);
 
     flex-direction: column;
 }
@@ -19,4 +19,11 @@
     font-size: 42px;
     color: $fourth_color;
     font-weight: 400;
+    margin: 15px;
 }
+
+.description {
+    margin-bottom: 15px;
+}
+
+
