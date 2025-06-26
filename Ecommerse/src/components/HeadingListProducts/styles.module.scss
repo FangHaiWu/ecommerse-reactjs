@@ -1,0 +1,7 @@
+@use "@styles/mixin.module" as *;
+@use "@styles/variables.module" as *;
+
+.containerHeadingListProduct {
+    @include flex_box_custom (space-between, center, 10px);
+
+}

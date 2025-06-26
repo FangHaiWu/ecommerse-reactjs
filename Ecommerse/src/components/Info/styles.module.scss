@@ -2,10 +2,17 @@
 @use "@styles/variables.module.scss" as *;
 
 .container {
-    @include flex_box_custom(space-evenly, center, 0px);
+    @include flex_box_custom(space-between, center, 0px);
 
-    height: 144px;
+    // height: 144px;
     background-color: $primary_color;
-    margin-top: -75px;
+    margin-top: -55px;
+    margin-bottom: 0px;
     color: $white_color;
+    padding: 20px 55px;
+
+}
+
+.layoutInfo {
+    @include flex_box_custom (center, center, 0px);
 }

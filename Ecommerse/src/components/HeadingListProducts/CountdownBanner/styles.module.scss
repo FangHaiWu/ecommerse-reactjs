@@ -1,0 +1,24 @@
+@use "@styles/mixin.module" as *;
+@use "@styles/variables.module" as *;
+
+
+.containerBanner {
+     @include flex_box_custom (center, center, 20px);
+     flex-direction: column;
+
+    background-image: url(https://xstore.b-cdn.net/elementor2/marseille04/wp-content/uploads/sites/2/2022/12/photo-of-man-wearing-white-hoodie-5474310.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    width: calc(100%/2);
+}
+
+.countdownTimeDisplay {
+    @include flex_box_custom (center, center, 15px);
+
+    width: 100%;
+    margin: -5px;
+    color: $thr_color;
+}
+

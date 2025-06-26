@@ -3,9 +3,9 @@ function App() {
     console.log("✅ App component rendered");
     return (
         <>
-            <HomePage />;
+            <HomePage />
         </>
-    )
+    );
 }
 
 export default App;

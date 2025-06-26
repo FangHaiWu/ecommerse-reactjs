@@ -1,0 +1,11 @@
+@use "@styles/mixin.module" as *;
+
+.time {
+  @include radius_common(3px);
+  @include flex_box_custom(center, center, 0px);
+
+  width: 100px;
+  height: 41px;
+  background-color: #fff;
+
+}
