@@ -3,15 +3,16 @@ import MainLayout from "@components/Layout/Layout";
 
 import styles from "./styles.module.scss";
 import CountdownBanner from "./CountdownBanner/CountdownBanner";
+import ProductItem from "@components/HeadingListProducts/ProductItem/ProductItem.jsx";
 const HeadingListProducts = () => {
-    const { containerHeadingListProduct } = styles;
+    const { containerHeadingListProduct, containerItem } = styles;
     return (
         <MainLayout>
             <div className={containerHeadingListProduct}>
                 <CountdownBanner />
-                <div>
-                    <div>1</div>
-                    <div>2</div>
+                <div className={containerItem}>
+                    <ProductItem/>
+                    <ProductItem/>
                 </div>
             </div>
 

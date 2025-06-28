@@ -3,14 +3,14 @@
 
 
 .containerBanner {
-     @include flex_box_custom (center, center, 20px);
+     @include flex_box_custom (center, center, 30px);
      flex-direction: column;
 
     background-image: url(https://xstore.b-cdn.net/elementor2/marseille04/wp-content/uploads/sites/2/2022/12/photo-of-man-wearing-white-hoodie-5474310.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 380px;
+    height: 408px;
     width: calc(100%/2);
 }
 
@@ -22,3 +22,9 @@
     color: $thr_color;
 }
 
+.title {
+    color: $fourth_color;
+}
+h2 {
+    margin: 0;
+}

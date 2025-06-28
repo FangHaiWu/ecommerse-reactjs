@@ -1,0 +1,74 @@
+@use "@styles/mixin.module" as *;
+@use "@styles/variables.module" as *;
+
+.boxImg {
+  width: 100%;
+  height: 353px;
+  position: relative;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &:hover .showWhenHover{
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  .showWhenHover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover .showFnWhenHover {
+    opacity: 1;
+    transform: translateX(20px);
+    transition: opacity 0.3s, transform 0.3s linear;
+
+  }
+  .showFnWhenHover {
+    @include flex_box_custom(center, center, 0px);
+
+    flex-direction: column;
+    opacity: 0;
+    background-color: $white_color;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    transform: translateX(40px);
+  }
+
+  .boxIcon {
+    @include flex_box_custom(center, center, 0px);
+
+    width: 40px;
+    height: 40px;
+    .boxImgFn {
+      width: 17px;
+      height: 17px;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #e7e6e6;
+    }
+  }
+}
+
+.containerImg {
+  @include flex_box_custom (start, start, 10px);
+  flex-direction: column;
+}
+.titleItem {
+  font-size: 16px;
+  color: $fourth_color;
+  margin: 6px 0;
+}
+.priceItem {
+  font-size: 14px;
+  color: $fourth_color;
+  margin: 6px 0;
+  font-weight: lighter;
+}

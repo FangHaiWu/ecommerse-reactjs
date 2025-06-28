@@ -3,7 +3,6 @@
 
 .btn {
     @include btn(174px, 42px, $primary_color, 3px);
-
     color: $white_color;
 
     &:hover {
