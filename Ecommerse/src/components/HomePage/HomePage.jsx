@@ -14,19 +14,19 @@ const HomePage = () => {
 
     useEffect(() => {
         getProducts().then((res) => {
-            setListProducts(res);
+            setListProducts(res.contents);
         });
     }, []);
-
+    console.log(listProducts);
     return (
         <div className={container}>
             <Header />
             <Banner />
             <Info />
             <AdvanceHeadling />
-            <HeadingListProducts />
+            <HeadingListProducts data={listProducts.slice(0, 2)} />
 
-            <PopularProduct />
+            <PopularProduct data={listProducts.slice(2)} />
         </div>
     );
 };
