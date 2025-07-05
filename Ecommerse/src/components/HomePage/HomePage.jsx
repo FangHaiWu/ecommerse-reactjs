@@ -7,6 +7,7 @@ import HeadingListProducts from "../HeadingListProducts/HeadingListProducts";
 import { useEffect, useState } from "react";
 import { getProducts } from "@/apis/productsService.js";
 import PopularProduct from "@components/PopularProduct/PopularProduct.jsx";
+import SaleHomePage from "../SaleHomePage/SaleHomePage";
 
 const HomePage = () => {
     const { container } = styles;
@@ -26,7 +27,8 @@ const HomePage = () => {
             <AdvanceHeadling />
             <HeadingListProducts data={listProducts.slice(0, 2)} />
 
-            <PopularProduct data={listProducts.slice(2)} />
+            <PopularProduct data={listProducts.slice(2, 10)} />
+            <SaleHomePage />
         </div>
     );
 };
